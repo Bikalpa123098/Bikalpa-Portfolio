@@ -1,5 +1,4 @@
-import React from 'react'
-import ContactImg from '../assets/contact.jpg'; // Adjust the path as necessary
+import ContactImg from '../assets/Contact.jpg'; // Adjust the path as necessary
 function Contact() {
   return (
     <div>
