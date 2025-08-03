@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesImg from '../assets/services.jpg'; // Adjust the path as necessary
+import ServicesImg from '../assets/services.jpg'; 
 function Services() {
   return (
     <div>

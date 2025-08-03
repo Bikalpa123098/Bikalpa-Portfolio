@@ -14,10 +14,12 @@ const About = () => {
             <p className='p-6'>
               My enthusiasm for frontend development is reflected not only in the projects I’ve completed but in my commitment to continuous learning and problem-solving
             </p>
-            <div>HTML & CSS</div>
-            <div>ReactJs</div>
-            <div>JavaScript</div>
-            <div>NodeJs</div>
+            <div className='p-6 list-none'>
+              <li>HTML & CSS <a className="h-1 w-[4rem] border-2 border-red-400 bg-white">------------------</a></li> 
+              <li>REACT JS</li>
+              <li>JAVA SCRIPT</li>
+              <li>NODE JS</li>
+            </div>
           </div>
         </div>
     </div>
