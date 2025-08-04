@@ -61,20 +61,20 @@ const App = () => {
               <h2 className="text-3xl font-semibold text-indigo-700 mb-2">Key Features</h2>
               <ul className="list-disc list-inside space-y-2">
                 <li>
-                  <span className="font-semibold text-purple-600">Multi-streaming:</span> Avoids
-                  head-of-line blocking.
+                  <span className="font-semibold text-purple-600">Multi-streaming:</span> 
+                  Allows for multiple independent data streams within a single connection 
                 </li>
                 <li>
-                  <span className="font-semibold text-purple-600">Multi-homing:</span> Supports
-                  multiple IP addresses for redundancy.
+                  <span className="font-semibold text-purple-600">Multi-homing:</span> 
+                  Ability of have multiple IP addresses, enabling it to communicate over multiple network paths
                 </li>
                 <li>
-                  <span className="font-semibold text-purple-600">Message-oriented:</span> Sends
-                  messages, not just raw data.
+                  <span className="font-semibold text-purple-600">Message-oriented:</span> 
+                  Sends messages, not just raw data.
                 </li>
                 <li>
-                  <span className="font-semibold text-purple-600">Secure handshake:</span> Prevents
-                  common TCP attacks.
+                  <span className="font-semibold text-purple-600">Secure handshake:</span> 
+                  Prevents TCP attacks.
                 </li>
               </ul>
             </div>
