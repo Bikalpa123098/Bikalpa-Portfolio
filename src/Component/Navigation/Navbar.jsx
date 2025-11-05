@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link to={"/portfolio"}>Portfolio</Link>
             <Link to={"/contact"}>Contact</Link>
         </ul>
-        <div className='px-10 py-6 bg-[#8F3985] text-[#f3f3f3] rounded-[50px] text-[1.5rem] cursor-pointer transition delay-70 hover:scale-105 hover:bg-[#7c4375]'>Connect With Me</div>
+        <div className='px-10 py-6 bg-[#FF3F7F] text-[#ffffff] rounded-[50px] text-[1.7rem] font-bold cursor-pointer transition delay-70 hover:scale-105 hover:bg-[#f32d6f]'>Connect With Me</div>
     </div>
   )
 }
