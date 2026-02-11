@@ -7,7 +7,7 @@ import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
 function App() {
   return (
-    <div className="bg-[#450693] text-[#FFC400]  min-h-screen w-full -font-inter px-10">
+    <div className="bg-[#00A5E0] text-[#FECEF1]  min-h-screen w-full -font-inter px-10">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
