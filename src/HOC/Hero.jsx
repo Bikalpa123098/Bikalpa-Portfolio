@@ -3,17 +3,50 @@ import Connect from "../Component/Navigation/Connect";
 
 const Hero = () => {
   return (
-    <div className="flex font-inter text-gray-200 flex-col justify-end  items-center pt-40 pb-16  h-full ">
-      <div className="text-5xl font-bold w-[49%]  py-4 my-4 "> 
-        I'm <span className="bg-[#f32d6f] px-2"> Bikalpa Koirala </span>
-      <div className=" font-bold py-4"> Web Developer based in Nepal</div>
-      <div className="text-[1.2rem] font-sans font-medium leading-6">Frontend developer from Bhairahawa, learning React and building clean, responsive UIs. Eager to grow through hands-on experience and collaboration.</div>
+    <section className="font-inter bg-[#00A5E0] min-h-screen flex flex-col justify-center items-center px-6 md:px-20 relative overflow-hidden">
+
+      {/* Pastel Blobs */}
+      <div className="absolute w-72 h-72 bg-pink-300 blur-3xl opacity-40 rounded-full top-20 left-10"></div>
+      <div className="absolute w-72 h-72 bg-yellow-300 blur-3xl opacity-40 rounded-full bottom-20 right-10"></div>
+
+      {/* Chunky Card */}
+      <div className="bg-[#FFF6E5] border-4 border-black rounded-[2.5rem] shadow-[14px_14px_0px_#000] p-10 max-w-4xl text-center">
+
+        {/* Name */}
+        <h1 className="text-5xl md:text-6xl font-extrabold text-black mb-4">
+          Hi, I’m{" "}
+          <span className="bg-pink-400 px-3 py-1 border-2 border-black rounded-xl shadow-[4px_4px_0px_#000]">
+            Bikalpa
+          </span>{" "}
+          👋
+        </h1>
+
+        {/* Role */}
+        <p className="text-2xl font-bold text-black mb-4">
+          Web Developer based in Nepal 🇳🇵
+        </p>
+
+        {/* Description */}
+        <p className="text-lg text-black max-w-2xl mx-auto leading-7 font-medium">
+          Frontend dev who likes building cute and clean UIs with React.
+          Learning, experimenting, and turning ideas into pixels.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex flex-wrap justify-center gap-6 mt-8">
+
+          <Connect />
+
+          <a
+            href="/resume.pdf"
+            className="bg-white px-8 py-6 font-bold text-[#00A5E0] border-4 border-black rounded-full shadow-[6px_6px_0px_#000] text-xl transition-transform hover:scale-105 hover:-rotate-2"
+          >
+            My Resume 📄
+          </a>
+        </div>
+
       </div>
-      <div className="flex justify-centre items-center ">
-      <Connect/>
-        <div className=" w-60 p-6 m-4 text-center font-bold bg-white text-[#00A5E0] border-2 border-[#f3f3f3] rounded-[50px] text-[1.5rem] cursor-pointer transition delay-70 hover:scale-105">My resume</div>
-      </div>
-    </div>
+    </section>
   );
 };
 

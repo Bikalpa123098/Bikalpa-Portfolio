@@ -2,7 +2,7 @@ import React from 'react'
 
 const Connect = () => {
     return (
-        <div className='px-10 py-6 bg-[#6185fb] text-[#ffffff] rounded-[50px] text-[1.7rem] font-bold cursor-pointer transition delay-70 hover:scale-105 hover:bg-[#5077f8]'>
+        <div className='bg-white px-8 py-6 font-bold text-[#00A5E0] border-4 border-black rounded-full shadow-[6px_6px_0px_#000] text-xl transition-transform hover:scale-105 hover:-rotate-2 hover:bg-[#ac2190]'>
             Connect With Me
         </div>
 
