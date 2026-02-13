@@ -28,7 +28,7 @@ const Hero = () => {
 
         {/* Description */}
         <p className="text-lg text-black max-w-2xl mx-auto leading-7 font-medium">
-          Frontend dev who likes building cute and clean UIs with React.
+          Frontend dev who likes building user-friendly and clean UIs with React.
           Learning, experimenting, and turning ideas into pixels.
         </p>
 

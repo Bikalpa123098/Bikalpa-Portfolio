@@ -11,7 +11,7 @@ const About = () => {
 
       {/* Title */}
       <h2 className="text-6xl font-extrabold text-white text-center drop-shadow-[4px_4px_0px_#000]">
-        About Me ✨
+        About Me 
       </h2>
       <p className="text-center text-white text-xl mt-4 font-medium">
         {/* I make cute and chunky things for the web. */}

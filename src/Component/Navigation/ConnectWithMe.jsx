@@ -1,51 +1,64 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaTimes } from "react-icons/fa";
 
-const ConnectWithMe = () => {
+const ConnectWithMe = ({ onClose }) => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-[#00A5E0] px-10 py-20">
+    <div className="fixed inset-0 z-50 flex justify-center items-center text-[#202021] bg-black/50 backdrop-blur-sm animate-fadeIn">
 
-      {/* Title */}
-      <h1 className="text-6xl font-extrabold text-black mb-6 drop-shadow-[4px_4px_0px_white]">
-        Connect With Me 💌
-      </h1>
+      {/* Modal Box */}
+      <div className="bg-[#00A5E0] border-[6px] border-black rounded-3xl shadow-[10px_10px_0px_#000] 
+      p-10 w-[90%] max-w-4xl relative">
 
-      <p className="text-xl font-semibold text-black mb-12 bg-white px-6 py-3 border-4 border-black rounded-xl shadow-[4px_4px_0px_#000]">
-        Let’s be internet friends ✨
-      </p>
-
-      {/* Social Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-        {/* GitHub */}
-        <a
-          href="https://github.com/YOUR_USERNAME"
-          target="_blank"
-          className="bg-pastelPink bg-[#FFB6C1] p-10 rounded-3xl border-4 border-black shadow-[6px_6px_0px_#000] hover:scale-110 hover:-rotate-2 transition-all"
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-6 right-6 bg-white p-3 border-4 border-black rounded-full  hover:scale-110"
         >
-          <FaGithub className="text-6xl text-black mb-4" />
-          <h2 className="text-2xl font-extrabold text-black">GitHub</h2>
-        </a>
+          <FaTimes className="text-black text-xl" />
+        </button>
 
-        {/* LinkedIn */}
-        <a
-          href="https://linkedin.com/in/YOUR_USERNAME"
-          target="_blank"
-          className="bg-[#BEE7E8] p-10 rounded-3xl border-4 border-black shadow-[6px_6px_0px_#000] hover:scale-110 hover:rotate-2 transition-all"
-        >
-          <FaLinkedin className="text-6xl text-black mb-4" />
-          <h2 className="text-2xl font-extrabold text-black">LinkedIn</h2>
-        </a>
+        {/* Title */}
+        <h1 className="text-5xl font-extrabold text-black mb-4 drop-shadow-[3px_3px_0px_white]">
+          Connect With Me 
+        </h1>
 
-        {/* Twitter */}
-        <a
-          href="https://twitter.com/YOUR_USERNAME"
-          target="_blank"
-          className="bg-[#FFD6A5] p-10 rounded-3xl border-4 border-black shadow-[6px_6px_0px_#000] hover:scale-110 hover:-rotate-1 transition-all"
-        >
-          <FaTwitter className="text-6xl text-black mb-4" />
-          <h2 className="text-2xl font-extrabold text-black">Twitter</h2>
-        </a>
+        <p className="text-lg font-semibold bg-white px-5 py-2 inline-block border-4 border-black rounded-xl shadow-[3px_3px_0px_#000] mb-10">
+          Let’s be internet friends 
+        </p>
 
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <a
+            href="https://github.com/bikalpa123098"
+            target="_blank"
+            className="bg-[#FFB6C1] p-8 rounded-2xl border-4 border-black shadow-[6px_6px_0px_#000] 
+            hover:scale-105 transition"
+          >
+            <FaGithub className="text-5xl mb-3" />
+            <h2 className="font-bold text-2xl">GitHub</h2>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/bikalpa-koirala-bb70b6255/E"
+            target="_blank"
+            className="bg-[#BEE7E8] p-8 rounded-2xl border-4 border-black shadow-[6px_6px_0px_#000] 
+            hover:scale-105 transition"
+          >
+            <FaLinkedin className="text-5xl mb-3" />
+            <h2 className="font-bold text-2xl">LinkedIn</h2>
+          </a>
+
+          <a
+            href="https://x.com/explore"
+            target="_blank"
+            className="bg-[#FFD6A5] p-8 rounded-2xl border-4 border-black shadow-[6px_6px_0px_#000] 
+            hover:scale-105 transition"
+          >
+            <FaTwitter className="text-5xl mb-3" />
+            <h2 className="font-bold text-2xl">Twitter</h2>
+          </a>
+
+        </div>
       </div>
     </div>
   );
